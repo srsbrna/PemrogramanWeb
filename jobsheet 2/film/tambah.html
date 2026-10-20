@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Film - SaCine</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header: bagian kepala halaman -->
+    <header>
+        <h1>SaCine</h1>
+        <p>Sistem Katalog dan Pengelolaan Film</p>
+
+        <!-- Navigasi utama -->
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="list.html">Daftar Film</a></li>
+                <li><a href="tambah.html">Tambah Film</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <main>
+        <section>
+            <h2>Form Tambah Film</h2>
+            <p>Silakan isi informasi film yang ingin ditambahkan.</p>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="judul">Judul Film</label>
+                    <input type="text" id="judul" name="judul" required>
+                </div>
+
+                <div>
+                    <label for="sutradara">Sutradara</label>
+                    <input type="text" id="sutradara" name="sutradara" required>
+                </div>
+
+                <div>
+                    <label for="tahun">Tahun Rilis</label>
+                    <input type="number" id="tahun" name="tahun" required>
+                </div>
+
+                <div>
+                    <label for="genre">Genre</label>
+                    <select id="genre" name="genre" required>
+                        <option value="">-- Pilih Genre --</option>
+                        <option value="drama">Drama</option>
+                        <option value="komedi">Komedi</option>
+                        <option value="aksi">Aksi</option>
+                        <option value="horor">Horor</option>
+                        <option value="romantis">Romantis</option>
+                        <option value="petualangan">Petualangan</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="stok">Jumlah Salinan</label>
+                    <input type="number" id="stok" name="stok" min="0" required>
+                </div>
+
+                <div>
+                    <button type="submit">Simpan Film</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer: bagian penutup halaman -->
+    <footer>
+        <p>&copy; 2026 SaCine - Sistem Katalog Film</p>
+    </footer>
+
+</body>
+</html>

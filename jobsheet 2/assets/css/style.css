@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f4;
+    color: #26352d;
+    line-height: 1.6;
+}
+
+/*Header dan navigasi*/
+header {
+    background-color: #245c46;
+    color: #ffffff;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+header nav {
+    width: auto;
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c8f0d7;
+}
+
+/*Main konten*/
+main {
+    max-width: 1100px;
+    width: 90%;
+    margin: 32px auto;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+h2 {
+    color: #245c46;
+    margin-top: 0;
+}
+
+/*Menu dan statistik berbentuk card*/
+h3 {
+    color: #245c46;
+}
+
+.menu-grid,
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+article,
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dce7df;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(30, 60, 40, 0.06);
+}
+
+article a {
+    display: inline-block;
+    background-color: #245c46;
+    color: #ffffff;
+    padding: 9px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+article a:hover {
+    background-color: #174531;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card .stat-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #245c46;
+    margin: 8px 0 0;
+}
+
+/*styling table*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #d5dfd8;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #245c46;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eaf2ec;
+}
+
+tbody tr:hover {
+    background-color: #d8eadc;
+}
+
+/*styling form*/
+form {
+    max-width: 700px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 24px;
+    border: 1px solid #dce7df;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(30, 60, 40, 0.06);
+}
+
+form div {
+    margin-bottom: 18px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #26352d;
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    margin: 0;
+    border: 1px solid #b9c9bd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font: inherit;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 2px solid #7bb995;
+    border-color: #245c46;
+}
+
+form button {
+    margin-right: 8px;
+}
+
+form button[type="reset"] {
+    background-color: #64736a;
+}
+
+form button[type="reset"]:hover {
+    background-color: #46544b;
+}
+
+/*styling footer*/
+footer {
+    background-color: #245c46;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* Styling button*/
+button {
+    background-color: #245c46;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Efek saat button disentuh kursor */
+button:hover {
+    background-color: #174531;
+}
+
+/* Jarak button edit dan hapus di tabel */
+td button {
+    margin: 2px;
+    padding: 7px 10px;
+}
+
+/* Button hapus berwarna merah */
+td button:last-child {
+    background-color: #a83f46;
+}
+
+td button:last-child:hover {
+    background-color: #852e35;
+}
+
+/* Button reset berwarna abu-abu */
+form button[type="reset"] {
+    background-color: #64736a;
+}
+
+form button[type="reset"]:hover {
+    background-color: #46544b;
+}
+
+
+/* Tautan tambah film */
+main section > p a {
+    color: #245c46;
+    font-weight: bold;
+}
+
+main section > p a:hover {
+    color: #174531;
+}
