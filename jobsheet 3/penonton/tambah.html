@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Penonton - SaCine</title>
+
+    <!-- CSS bersama Jobsheet 2 -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header: bagian kepala halaman -->
+    <header>
+        <h1>SaCine</h1>
+        <p>Sistem Katalog dan Pengelolaan Film</p>
+
+        <!-- Navigasi utama -->
+        <nav aria-label="Navigasi utama">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" aria-label="Buka atau tutup menu">
+                ☰
+            </label>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../film/list.html">Daftar Film</a></li>
+                <li><a href="../film/tambah.html">Tambah Film</a></li>
+                <li><a href="list.html">Daftar Penonton</a></li>
+                <li><a href="tambah.html">Tambah Penonton</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <main>
+        <section>
+            <h2>Tambah Penonton</h2>
+            <p>Silakan isi formulir berikut untuk menambahkan data penonton.</p>
+
+            <!-- Form tambah penonton -->
+            <form action="#" method="post">
+
+                <p>
+                    <label for="id_penonton">ID Penonton</label>
+                    <input
+                        type="text"
+                        id="id_penonton"
+                        name="id_penonton"
+                        placeholder="Contoh: P004"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="nama">Nama Penonton</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan nama penonton"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="alamat">Alamat</label>
+                    <textarea
+                        id="alamat"
+                        name="alamat"
+                        rows="3"
+                        placeholder="Masukkan alamat penonton"
+                        required
+                    ></textarea>
+                </p>
+
+                <p>
+                    <label for="telepon">Nomor Telepon</label>
+                    <input
+                        type="tel"
+                        id="telepon"
+                        name="telepon"
+                        placeholder="Contoh: 081234567890"
+                        required
+                    >
+                </p>
+
+                <!-- Tombol aksi -->
+                <p>
+                    <button type="submit">Simpan</button>
+                    <button type="reset">Reset</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer: bagian penutup halaman -->
+    <footer>
+        <p>&copy; 2026 SaCine - Sistem Katalog Film</p>
+    </footer>
+
+</body>
+</html>

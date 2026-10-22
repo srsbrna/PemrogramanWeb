@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - SaCine</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header: bagian kepala halaman -->
+    <header>
+        <h1>SaCine</h1>
+        <p>Sistem Katalog dan Pengelolaan Film</p>
+
+        <!-- Navigasi utama -->
+        <nav aria-label="Navigasi utama">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" aria-label="Buka atau tutup menu">
+                ☰
+            </label>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="film/list.html">Daftar Film</a></li>
+                <li><a href="film/tambah.html">Tambah Film</a></li>
+                <li><a href="penonton/list.html">Daftar Penonton</a></li>
+                <li><a href="penonton/tambah.html">Tambah Penonton</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <main>
+        <section>
+            <h2>Selamat Datang di SaCine</h2>
+            <p>
+                SaCine merupakan web untuk melihat dan mengelola
+                data film.
+            </p>
+        </section>
+
+        <section>
+            <h2>Ringkasan Statistik</h2>
+
+            <div class="stats-grid">
+                <article class="card">
+                    <h3>Total Film</h3>
+                    <p class="stat-number">25</p>
+                </article>
+
+                <article class="card">
+                    <h3>Total Anggota</h3>
+                    <p class="stat-number">12</p>
+                </article>
+
+                <article class="card">
+                    <h3>Total Dipinjam</h3>
+                    <p class="stat-number">8</p>
+                </article>
+            </div>
+
+            <h1></h1>
+            <h2>Menu Utama</h2>
+
+            <article>
+                <h3>Daftar Film</h3>
+                <p>Lihat informasi film yang tersedia di SaCine.</p>
+                <a href="film/list.html">Lihat Daftar Film</a>
+            </article>
+
+            <article>
+                <h3>Tambah Film</h3>
+                <p>Masukkan informasi film baru ke dalam formulir.</p>
+                <a href="film/tambah.html">Tambah Film</a>
+            </article>
+
+            <article>
+                <h3>Daftar Penonton</h3>
+                <p>Lihat informasi penonton.</p>
+                <a href="penonton/list.html">Lihat Daftar Penonton</a>
+            </article>
+
+            <article>
+                <h3>Tambah Penonton</h3>
+                <p>Masukkan informasi penonton baru ke dalam formulir.</p>
+                <a href="penonton/tambah.html">Tambah Penonton</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer: bagian penutup halaman -->
+    <footer>
+        <p>&copy; 2026 SaCine - Sistem Katalog Film</p>
+    </footer>
+
+</body>
+</html>
