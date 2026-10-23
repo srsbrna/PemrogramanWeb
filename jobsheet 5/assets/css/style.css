@@ -1,0 +1,464 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f4;
+    color: #26352d;
+    line-height: 1.6;
+}
+
+/*Header dan navigasi*/
+header {
+    background-color: #245c46;
+    color: #ffffff;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 0;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+header nav {
+    width: auto;
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px 24px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c8f0d7;
+}
+
+/*Main konten*/
+main {
+    max-width: 1100px;
+    width: 90%;
+    margin: 32px auto;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+h2 {
+    color: #245c46;
+    margin-top: 0;
+}
+
+/*Menu dan statistik berbentuk card*/
+h3 {
+    color: #245c46;
+}
+
+.menu-grid,
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+article,
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dce7df;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(30, 60, 40, 0.06);
+}
+
+article a {
+    display: inline-block;
+    background-color: #245c46;
+    color: #ffffff;
+    padding: 9px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+article a:hover {
+    background-color: #174531;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card .stat-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #245c46;
+    margin: 8px 0 0;
+}
+
+/*styling table*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #d5dfd8;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #245c46;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eaf2ec;
+}
+
+tbody tr:hover {
+    background-color: #d8eadc;
+}
+
+/*styling form*/
+form {
+    max-width: 700px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 24px;
+    border: 1px solid #dce7df;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(30, 60, 40, 0.06);
+}
+
+form div {
+    margin-bottom: 18px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #26352d;
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    margin: 0;
+    border: 1px solid #b9c9bd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font: inherit;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 2px solid #7bb995;
+    border-color: #245c46;
+}
+
+form button {
+    margin-right: 8px;
+}
+
+form button[type="reset"] {
+    background-color: #64736a;
+}
+
+form button[type="reset"]:hover {
+    background-color: #46544b;
+}
+
+/*styling footer*/
+footer {
+    background-color: #245c46;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* Styling button*/
+button {
+    background-color: #245c46;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Efek saat button disentuh kursor */
+button:hover {
+    background-color: #174531;
+}
+
+/* Jarak button edit dan hapus di tabel */
+td button {
+    margin: 2px;
+    padding: 7px 10px;
+}
+
+/* Button hapus berwarna merah */
+td button:last-child {
+    background-color: #a83f46;
+}
+
+td button:last-child:hover {
+    background-color: #852e35;
+}
+
+/* Button reset berwarna abu-abu */
+form button[type="reset"] {
+    background-color: #64736a;
+}
+
+form button[type="reset"]:hover {
+    background-color: #46544b;
+}
+
+
+/* Tautan tambah film */
+main section > p a {
+    color: #245c46;
+    font-weight: bold;
+}
+
+main section > p a:hover {
+    color: #174531;
+}
+
+/* Checkbox dan ikon hamburger disembunyikan di desktop */
+header nav input[type="checkbox"] {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* Tablet dan perangkat lebih kecil */
+@media (max-width: 767px) {
+    header {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    header h1 {
+        flex: 1;
+    }
+
+    header p {
+        order: 2;
+        flex: 0 0 100%;
+        min-width: 0;
+        text-align: left;
+    }
+
+    header nav {
+        order: 3;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        text-align: right;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    header nav input[type="checkbox"]:checked ~ ul {
+        display: flex;
+    }
+
+    header nav li {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    header nav a {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 20px 0;
+    
+}
+
+.table-responsive table {
+    min-width: 650px;
+    margin: 0;
+}
+
+/* Tablet dan layar yang lebih kecil */
+@media (max-width: 767px) {
+    .menu-grid,
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    main {
+        width: 92%;
+        margin: 24px auto;
+    }
+}
+
+/* HP */
+@media (max-width: 480px) {
+    .menu-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 92%;
+        margin: 20px auto;
+        min-width: 0;
+    }
+
+    article,
+    .card {
+        padding: 16px;
+        min-width: 0;
+    }
+
+    form {
+        padding: 16px;
+    }
+
+    header {
+        padding: 16px 4%;
+    }
+
+    footer {
+        width: 100%;
+        padding: 16px 4%;
+        overflow-wrap: anywhere;
+    }
+}
+/* Hamburger menu untuk tampilan mobile */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Tampilan mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    #navMenu {
+        display: none;
+    }
+
+    #navMenu.active {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* Kolom pencarian daftar film */
+.search-box {
+    margin: 16px 0;
+    max-width: 400px;
+}
+
+.search-box label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+#noFilmResult {
+    color: #c62828;
+    margin: 12px 0;
+}

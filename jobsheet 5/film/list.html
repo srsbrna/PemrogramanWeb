@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Film - SaCine</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header: bagian kepala halaman -->
+    <header>
+        <h1>SaCine</h1>
+        <p>Sistem Katalog dan Pengelolaan Film</p>
+
+        <!-- Navigasi utama -->
+        <nav aria-label="Navigasi utama">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" aria-label="Buka atau tutup menu">
+                ☰
+            </label>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="list.html">Daftar Film</a></li>
+                <li><a href="tambah.html">Tambah Film</a></li>
+                <li><a href="../penonton/list.html">Daftar Penonton</a></li>
+                <li><a href="../penonton/tambah.html">Tambah Penonton</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <main>
+        <section>
+            <h2>Daftar Film</h2>
+            <p>Berikut adalah daftar film yang tersedia di SaCine.</p>
+
+            <p>
+                <a href="tambah.html">Tambah Film Baru</a>
+            </p>
+            <div class="search-box">
+                <label for="searchFilm">Cari Judul Film</label>
+                <input
+                    type="text"
+                    id="searchFilm"
+                    placeholder="Ketik judul film..."
+                >
+            </div>
+            <p id="noFilmResult" style="display: none;">
+                Film tidak ditemukan.
+            </p>
+
+            <!-- Tabel daftar film -->
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Judul</th>
+                        <th scope="col">Sutradara</th>
+                        <th scope="col">Tahun</th>
+                        <th scope="col">Genre</th>
+                        <th scope="col">Stok</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Laskar Pelangi</td>
+                        <td>Riri Riza</td>
+                        <td>2008</td>
+                        <td>Drama</td>
+                        <td>5</td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Hapus</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Bumi Manusia</td>
+                        <td>Hanung Bramantyo</td>
+                        <td>2019</td>
+                        <td>Drama Sejarah</td>
+                        <td>3</td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Hapus</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Agak Laen</td>
+                        <td>Muhadkly Acho</td>
+                        <td>2024</td>
+                        <td>Komedi</td>
+                        <td>4</td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Hapus</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Keluarga Cemara</td>
+                        <td>Yandy Laurens</td>
+                        <td>2019</td>
+                        <td>Drama Keluarga</td>
+                        <td>2</td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Hapus</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Petualangan Sherina 2</td>
+                        <td>Riri Riza</td>
+                        <td>2023</td>
+                        <td>Petualangan</td>
+                        <td>6</td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </section>
+    </main>
+
+    <!-- Footer: bagian penutup halaman -->
+    <footer>
+        <p>&copy; 2026 SaCine - Sistem Katalog Film</p>
+    </footer>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

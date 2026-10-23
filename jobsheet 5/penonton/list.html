@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Penonton - SaCine</title>
+
+    <!-- CSS bersama Jobsheet 2 -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header: bagian kepala halaman -->
+    <header>
+        <h1>SaCine</h1>
+        <p>Sistem Katalog dan Pengelolaan Film</p>
+
+        <!-- Navigasi utama -->
+        <nav aria-label="Navigasi utama">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" aria-label="Buka atau tutup menu">
+                ☰
+            </label>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../film/list.html">Daftar Film</a></li>
+                <li><a href="../film/tambah.html">Tambah Film</a></li>
+                <li><a href="list.html">Daftar Penonton</a></li>
+                <li><a href="tambah.html">Tambah Penonton</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <main>
+        <section>
+            <h2>Daftar Penonton</h2>
+            <p>Berikut adalah daftar penonton yang terdaftar di SaCine.</p>
+
+            <p>
+                <a href="tambah.html">Tambah Penonton Baru</a>
+            </p>
+            <div class="search-box">
+            <label for="searchPenonton">Cari Penonton</label>
+            <input
+                type="text"
+                id="searchPenonton"
+                placeholder="Ketik ID atau nama penonton..."
+            >
+            </div>
+
+            <p id="noPenontonResult" style="display: none;">
+            Penonton tidak ditemukan.
+            </p>
+
+            <!-- Tabel daftar penonton -->
+            <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">ID Penonton</th>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Alamat</th>
+                        <th scope="col">No. Telepon</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>P001</td>
+                        <td>Siti Aminah</td>
+                        <td>Malang</td>
+                        <td>0812xxxx</td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Hapus</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>P002</td>
+                        <td>Budi Santoso</td>
+                        <td>Batu</td>
+                        <td>0813xxxx</td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Hapus</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>P003</td>
+                        <td>Ani Lestari</td>
+                        <td>Malang</td>
+                        <td>0815xxxx</td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: bagian penutup halaman -->
+    <footer>
+        <p>&copy; 2026 SaCine - Sistem Katalog Film</p>
+    </footer>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
